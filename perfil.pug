@@ -1,0 +1,26 @@
+extend templates/_template.pug
+block contenido_template
+    section.main-profile-container
+        div(class="grid-container profile-container")
+            figure 
+            .profile-info 
+                h3 Hola Soy JuanCaCode
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci amet ea, in molestias autem quam consequuntur quos nulla minus rem suscipit? Nisi sed ipsa maxime id totam repudiandae unde cumque.
+    section.blogposts-container 
+        h2 Últimos Blogposts 
+        section.container-posts 
+            +article("post-2.png", "Titulo del post", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique error vitae quia ")
+            +article("post-1.png", "Titulo del post", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique error vitae quia ")
+            +article("post-3.png", "Titulo del post", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique error vitae quia ")
+    section.blogpost-contact-container
+        section(class="grid-container contact-container")
+            div 
+                img(src="./assets/img/013-newsletter.png", alt="contact")
+                div.contact-left 
+                    a(href="") Contacto
+                    p Lorem ipsum dolor sit amet consectetur.<br>  ipsum dolor sit amet consectetur.
+            div 
+                img(src="./assets/img/006-like.png", alt="heart")
+                div.contact-right
+                    a(href="") Escribe
+                    p Lorem ipsum dolor sit amet consectetur.<br> ipsum dolor sit amet consectetur.

@@ -1,0 +1,98 @@
+.blogpost-img-container{
+    padding:0 20px;
+    img{
+        width: 100%;
+        max-height: 500px;
+        object-fit: cover;
+    }
+}
+.blogpost-main-container{
+    padding: 0 20px;
+    h3{
+        border-bottom:1px solid $primary-color;
+        padding:2rem 0;
+        color:$gold-color ;
+    }
+    article {
+        // max-width: 900px;
+        margin:0 auto;
+        h1{
+            margin:3rem 0;
+            color: $primary-color;
+        }
+        p{
+            font-size: $md;
+            margin:2rem auto;
+            text-align: left;
+            line-height: 2.5rem;
+            color: $gray-rat;            
+        }
+    }
+}
+
+.blogpost-contact-container{
+    width: 100%;
+    background-color: $gray-rat;
+
+    .contact-container{
+        display: grid;
+        grid-template-columns: 1fr;
+
+        >div{
+            display: grid;
+            grid-template-columns: auto 2fr;
+            padding:2rem;
+            justify-content: center;
+            justify-items: left;
+            align-items: center;
+            gap: 2rem;
+            color: $dark-color;
+
+            div{
+                display: flex;
+                flex-flow: column wrap;
+                gap:1rem;
+                justify-content: flex-start;
+                align-items: left;
+                a{
+                    color: $primary-color;
+                    font-size: $lg;
+                }
+            }
+        }
+
+        div img{
+            width: 100%;
+            max-width: 100px;
+            
+        }
+    }
+
+}
+
+@media (min-width:600px){
+    .blogpost-main-container{
+        max-width: 900px;
+        margin:0 auto;
+        article {
+            margin:0 auto;
+            h1{
+                margin:3rem 0;
+                
+            }
+            p{
+                font-size: $md;
+                margin:2rem auto;
+                text-align: left;
+                line-height: 3.5rem;
+            }
+        }
+    }
+    .blogpost-contact-container .contact-container{
+        grid-template-columns: 1fr 1fr;
+        height: 250px;
+        >div{
+            grid-template-columns: auto auto;
+        }
+    }
+}

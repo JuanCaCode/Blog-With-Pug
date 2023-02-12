@@ -1,0 +1,53 @@
+.hero{
+    width: 100%;
+    height: auto;
+    min-height:calc(100vh - 140px );
+    background:linear-gradient(80deg, rgba($primary-color,0.4), rgba($dark-color, 0.8)), url("../../assets/img/Cover.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    padding:0 20px;
+    &-button{
+        width: 180px;
+        height: auto;
+        margin-top: 50px;
+        padding:1rem 2rem;
+        text-align: center;
+        font-weight: 700;
+        font-size: $lg;
+        background-color: $primary-color;
+        border: none;
+        cursor: pointer;
+        transition:all linear 0.1s;
+    }
+    &-button:hover{
+        box-shadow: 1px 1px 10px 2px rgba(#000,0.5);
+    }
+    h1{
+        text-align: center;
+        line-height: 5rem;
+    }
+}
+@media (min-width:600px){
+    .hero{
+        padding: 0 5%;
+        &-button{
+            text-align: center;
+        }
+        h1{
+            font-size: 6rem;
+            line-height: 8rem;
+        }
+    }
+}
+@media (min-width:1200px){
+    .hero{
+        padding: 0 15%;
+        h1{
+            font-size: 7rem;
+        }
+    }
+}

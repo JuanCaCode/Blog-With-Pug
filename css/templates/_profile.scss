@@ -1,0 +1,44 @@
+.main-profile-container{
+    width: 100%;
+    background-color: $dark-color;
+    .profile-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        padding: 3rem 2rem;
+        figure{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            background-image: url("./../../assets/img/foto personal.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        .profile-info{
+            display: flex;
+            flex-flow: column wrap;
+            gap: 2rem;
+            justify-content: center;
+            align-items: center;
+            margin:2rem auto;
+            text-align: center;
+        }
+    }
+}
+
+@media (min-width:700px){
+    .main-profile-container{
+        .profile-container{
+            max-width: 800px;
+            grid-template-columns: 1fr 2fr;
+            place-content: center;
+            place-items: center;
+            gap: 2rem;
+            .profile-info{
+                align-items:flex-start;
+                text-align: left;
+            }
+        }
+    }
+}

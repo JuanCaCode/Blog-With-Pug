@@ -1,0 +1,21 @@
+extend templates/_template.pug
+block contenido_template
+    section.main-container-blogs
+        section.blogs-hero
+            .blogs-hero-image-side
+                h2 Noticias 
+                img(src="./assets/img/post-1.png", alt="oculus image")
+            .blogs-hero-info-side
+                h2 Titulo del Blogpost 
+                p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique error vitae quia est maiores deserunt odit officiis perferendis repellat, labore modi quas blanditiis alias consequuntur necessitatibus cum ipsum velit nesciunt.
+                a(href="/blog.html") 
+                    button.btn-readmore Leer más
+    section.blogposts-container 
+        h2 Últimos Blogposts 
+        section.container-posts 
+            +article("post-2.png", "Titulo del post", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique error vitae quia ")
+            +article("post-1.png", "Titulo del post", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique error vitae quia ")
+            +article("post-3.png", "Titulo del post", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique error vitae quia ")
+            +article("post-2.png", "Titulo del post", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique error vitae quia ")
+            +article("post-3.png", "Titulo del post", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique error vitae quia ")
+            +article("post-1.png", "Titulo del post", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique error vitae quia ")

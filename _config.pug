@@ -1,0 +1,9 @@
+mixin article(imagen,titulo,contenido)
+    .post-article 
+        figure.post-image
+            img(src="./assets/img/"+imagen, alt=titulo)
+        .post-info
+            h3= titulo 
+            p= contenido
+            a(href="/blog.html") 
+                button(class="btn-readmore") Leer más
