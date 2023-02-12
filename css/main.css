@@ -530,7 +530,7 @@ footer section:last-child p {
   height: 200px;
   border-radius: 50%;
   overflow: hidden;
-  background-image: url("./../../assets/img/foto personal.jpg");
+  background-image: url("./../assets/img/foto personal.jpg");
   background-size: cover;
   background-position: center;
 }
