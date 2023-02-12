@@ -2,7 +2,7 @@
     width: 100%;
     height: auto;
     min-height:calc(100vh - 140px );
-    background:linear-gradient(80deg, rgba($primary-color,0.4), rgba($dark-color, 0.8)), url("../../assets/img/Cover.png");
+    background:linear-gradient(80deg, rgba($primary-color,0.4), rgba($dark-color, 0.8)), url("./../assets/img/Cover.png");
     background-size: cover;
     background-position: center;
     display: flex;

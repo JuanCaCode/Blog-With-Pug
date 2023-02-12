@@ -222,7 +222,7 @@ footer section:last-child p {
   width: 100%;
   height: auto;
   min-height: calc(100vh - 140px);
-  background: linear-gradient(80deg, rgba(242, 195, 53, 0.4), rgba(37, 37, 37, 0.8)), url("../../assets/img/Cover.png");
+  background: linear-gradient(80deg, rgba(242, 195, 53, 0.4), rgba(37, 37, 37, 0.8)), url("./../assets/img/Cover.png");
   background-size: cover;
   background-position: center;
   display: -webkit-box;
